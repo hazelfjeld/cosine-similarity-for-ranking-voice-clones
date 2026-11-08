@@ -1,0 +1,8 @@
+# Python 3.11 or 3.12 recommended. PyTorch's CPU/GPU wheel is platform dependent.
+numpy>=1.26,<3
+scipy>=1.12,<2
+soundfile>=0.12,<1
+torch>=2.2,<3
+transformers>=4.48,<6
+silero-vad>=5,<7
+gradio>=5,<7

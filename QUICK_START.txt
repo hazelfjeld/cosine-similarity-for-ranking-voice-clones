@@ -1,0 +1,21 @@
+VOICE SIMILARITY RANKER  --  4 QUICK STEPS
+=========================================
+
+1. UNZIP this folder to your Windows computer.
+2. DOUBLE-CLICK start_windows.bat (requires Python 3.11/3.12 and internet for first setup).
+3. In the browser, UPLOAD the reference voice and SELECT candidate audio files or ZIP
+   archives. You can also paste a folder or ZIP path. Audio in subfolders is included.
+4. CLICK "Rank voice samples", then pick a ranked clip to PLAY or DOWNLOAD rankings.csv.
+
+WHAT THE SCORE MEANS
+Higher cosine similarity -> closer *speaker identity* to the reference.
+The score is NOT the percent confidence, naturalness, or emotion score.
+
+NO GPU NEEDED (CPU works, but slower). RTX 4050 is useful if CUDA PyTorch is installed.
+FIRST RUN downloads the WavLM speaker model. Subsequent runs use local model cache.
+
+If the original clip has background music: keep voice activity detection ON first.
+It will remove non-speech sections but CANNOT remove music underneath talking.
+Try the cleaned and original reference separately to see if candidate rankings agree.
+
+See README.md for CLI commands, troubleshooting and technical details.

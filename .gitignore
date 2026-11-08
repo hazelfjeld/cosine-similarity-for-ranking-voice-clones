@@ -1,0 +1,7 @@
+.venv/
+.voice_ranker_cache/
+__pycache__/
+.pytest_cache/
+*.pyc
+rankings.csv
+rankings.json
